@@ -7,7 +7,7 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 
 app.listen(PORT, () => {
     console.log(`Servidor backend corriendo en el puerto ${PORT}`);
